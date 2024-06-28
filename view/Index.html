@@ -11,6 +11,7 @@
       flex-direction: column;
       height: 100vh;
       margin: 0;
+      overflow-y: scroll; /* Permitir el desplazamiento vertical */
     }
     .header-image img {
       width: 100%;
@@ -43,28 +44,18 @@
       background-color: #333;
     }
     .profile-img {
-      width: 120px;
-      height: 120px;
-      border-radius: 100%;
-      background-color: #b7fdff;
-      margin-bottom: 0px;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .profile-img img {
-      width: 120px;
-      height: 120px;
-      display: block;
-      object-fit: cover;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin-bottom: 20px;
     }
     .main-content {
       margin-left: 200px;
       padding: 20px;
       width: calc(100% - 200px);
-      overflow: hidden; /* Asegúrate de que el contenido no se superponga */
-      margin-top: 200px; /* Ajusta este margen para que el contenido quede debajo de la imagen del encabezado */
+      overflow: auto; /* Permitir el desplazamiento en el contenido principal */
+      margin-top: 10px; /* Ajusta este margen para que el contenido quede debajo de la imagen del encabezado */
     }
     .destination-card img {
       width: 100%;
@@ -90,7 +81,7 @@
   <nav class="navbar navbar-vertical">
     <div class="profile-img">
       <!-- Imagen de perfil -->
-      <img src="../img/avion2.png" alt="Perfil" class="img-fluid">
+      <img src="../img/AVION.png" alt="Perfil" class="img-fluid">
     </div>
     <a class="navbar-brand text-white" href="#">OntourTon</a>
     <ul class="navbar-nav">
