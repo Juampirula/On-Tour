@@ -43,11 +43,21 @@
       background-color: #333;
     }
     .profile-img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      background-color: #fff;
-      margin-bottom: 20px;
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+      background-color: #b7fdff;
+      margin-bottom: 0px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .profile-img img {
+      width: 120px;
+      height: 120px;
+      display: block;
+      object-fit: cover;
     }
     .main-content {
       margin-left: 200px;
@@ -80,7 +90,7 @@
   <nav class="navbar navbar-vertical">
     <div class="profile-img">
       <!-- Imagen de perfil -->
-      <img src="../img/AVION.png" alt="Perfil" class="img-fluid">
+      <img src="../img/avion2.png" alt="Perfil" class="img-fluid">
     </div>
     <a class="navbar-brand text-white" href="#">OntourTon</a>
     <ul class="navbar-nav">
